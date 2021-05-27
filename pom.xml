@@ -43,6 +43,11 @@
             <artifactId>xstream</artifactId>
             <version>1.2</version>
          </dependency>
+         <dependency>
+            <groupId>org.asciidoctor</groupId>
+            <artifactId>asciidoctor-maven-plugin</artifactId>
+            <version>1.5.8</version>
+         </dependency>
       </dependencies>
    </dependencyManagement>
 </project>
