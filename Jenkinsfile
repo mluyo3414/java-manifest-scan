@@ -7,7 +7,7 @@ pipeline {
         stage('Scan') {
             steps {
                 git clone
-                nexusPolicyEvaluation advancedProperties: '', enableDebugLogging: false, failBuildOnNetworkError: false, iqApplication: selectedApplication('java-manifest-test-1'), iqScanPatterns: [[scanPattern: 'pom.xml']], iqStage: 'build', jobCredentialsId: ''
+                nexusPolicyEvaluation iqApplication: 'java-manifest-test-1', iqStage: 'build', , iqScanPatterns: [[scanPattern: 'pom.xml']]
             }
         }
 
